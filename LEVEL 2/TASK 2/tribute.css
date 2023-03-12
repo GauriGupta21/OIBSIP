@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap");
+
+body {
+  background: white;
+  animation: gradient 10s ease infinite;
+  font-family: "Ubuntu", sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+}
+.big_parent {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  width: 735px;
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  right: 30px;
+}
+.parent {
+  height: 630px;
+  width: 235px;
+  background-color: #e73c7e;
+  border-radius: 20px;
+  transition: all 0.5s;
+  padding: 1em;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #00000026;
+  background-blend-mode: overlay;
+  background-size: cover;
+  box-shadow: -4px -1px 17px;
+}
+.parent:hover {
+  width: 1000px;
+  border-radius: 30px;
+}
+.parent p {
+  transform: rotate(-90deg);
+  transition: all 0.5s;
+  position: absolute;
+  bottom: 50px;
+  color: white;
+}
+.parent:hover p {
+  transform: rotate(0deg);
+}
+.parent:nth-child(1) {
+  background-image: url(./Elon-Musk-2022.webp);
+  background-position-x: -330px;
+}
+.parent:nth-child(2) {
+  background-image: url(./d9196f96-4d9f-4c34-a6b2-d4d34cb9eceb.jpeg);
+  background-position-x: -278px;
+}
+.parent:nth-child(3) {
+  background-image: url(./4447dc39-73b6-496e-bda0-d0b14e8ea539.jpeg);
+  background-position-x: -240px;
+}
+
+.parent:nth-child(4) {
+  background-image: url(./3ada7bce-542e-4ba2-bb02-637b440173e5.jpeg);
+}
+
+.parent:nth-child(1):hover {
+  background-image: url(./Elon-Musk-2022.webp);
+  background-position-x: -330px;
+}
+.parent:nth-child(2):hover {
+  background-image: url(./d9196f96-4d9f-4c34-a6b2-d4d34cb9eceb.jpeg);
+  background-position-x: -162px;
+}
+.parent:nth-child(3):hover {
+  background-image: url(./4447dc39-73b6-496e-bda0-d0b14e8ea539.jpeg);
+  background-position-x: -135px;
+}
+
+.parent:nth-child(4):hover {
+  background-image: url(./3ada7bce-542e-4ba2-bb02-637b440173e5.jpeg);
+}
+.text {
+  font-family: "Merriweather", serif;
+  font-size: 90px;
+  position: absolute;
+  top: 135px;
+  left: 100px;
+}
+.texts {
+  font-family: "Merriweather", serif;
+  font-size: 90px;
+  position: absolute;
+  top: 240px;
+  left: 260px;
+}
+.text_parent {
+  position: absolute;
+  top: 55px;
+}
+.text1 {
+  font-size: 15px;
+  width: 500px;
+  position: absolute;
+  top: 380px;
+  left: 100px;
+  line-height: 30px;
+  font-family: "Merriweather", serif;
+}
+.grand {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.heading {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Lora", serif;
+  margin-top: 35px;
+}
+.card {
+  height: 400px;
+  width: 400px;
+  background-color: black;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  margin: 25px;
+  background-size: cover;
+}
+.card_parent {
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.button {
+  border: 3px solid white;
+  padding: 1em;
+  color: white;
+  position: absolute;
+  bottom: 50px;
+  right: 20px;
+  cursor: pointer;
+}
+.card_overlay {
+  position: absolute;
+  top: 1000px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #000d006b;
+  transition: all 2s;
+}
+.card:hover .card_overlay {
+  top: 0px;
+}
+.card_overlay p,
+.button {
+  position: absolute;
+  bottom: 0px;
+  transition: all 0.5s;
+  margin-left: 10px;
+  opacity: 0;
+}
+.card_overlay:hover p,
+.card_overlay:hover .button {
+  bottom: 40px;
+  opacity: 1;
+  /* color: white; */
+}
+.card img {
+  object-fit: cover;
+  height: 400px;
+  width: 400px;
+}
+.button:hover {
+  background-color: white;
+  color: black;
+}
+.card_overlay:hover p {
+  color: white;
+  font-size: 20px;
+  font-family: "Merriweather", serif;
+  margin-left: 50px;
+}
+.info {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0;
+  left: 0;
+  background-color: rgb(0 0 0 / 70%);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info_container {
+  height: 500px;
+  width: 700px;
+  background: white;
+  position: relative;
+  display: flex;
+}
+.info_container h1 {
+  font-family: "Merriweather", serif;
+}
+.info_img img {
+  height: 500px;
+  width: 300px;
+  object-fit: cover;
+}
+.info_img {
+  background-color: aliceblue;
+}
+.info_text {
+  background-color: white;
+  padding: 1em;
+  text-align: justify;
+}
+.info_text p {
+  line-height: 24px;
+}
+.cross {
+  font-size: 25px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 1em;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.cross:hover {
+  color: white;
+  background: black;
+}
+card:hover {
+  transform: scale(1.05);
+}
+.animation_class {
+  animation: anime 0.5s linear;
+}
+@keyframes anime {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.quote {
+  font-size: 40px;
+  width: 425px;
+  position: absolute;
+  top: 1831px;
+  left: 20px;
+  line-height: 49px;
+  font-family: "Merriweather", serif;
+  font-weight: 600;
+}
+.quote_parent {
+  background-color: #e0e0e0;
+  height: 700px;
+  width: 100%;
+  margin-top: 49px;
+}
+.big_quote {
+  display: flex;
+}
+.quote_img img {
+  height: 700px;
+  width: 930px;
+  object-fit: cover;
+}
+.quote_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+.quote_text {
+  display: flex;
+}
+.quote1 {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+.line {
+  height: 190px;
+  width: 2px;
+  background: black;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+  border-radius: 65px;
+  padding: 5px;
+}
+
+.line1 {
+  height: 111px;
+  width: 2px;
+  background: transparent;
+}
+.qw {
+  font-size: 15px;
+  width: 495px;
+  align-items: normal;
+}
+.footer {
+  height: 100px;
+  background: #e0e0e0;
+  width: 100px;
+}
+.footer {
+  height: 100px;
+  background: white;
+  width: 100vw;
+}
+.names {
+  position: relative;
+  top: 43px;
+  left: 80px;
+  font-size: 25px;
+  font-family: "Merriweather", serif;
+}
+.twi img {
+  height: 30px;
+  width: 35px;
+}
+.fac img {
+  height: 30px;
+  width: 35px;
+}
+.ins img {
+  height: 30px;
+  width: 35px;
+}
+.lin img {
+  height: 36px;
+  width: 39px;
+}
+.icon_parent {
+  display: flex;
+  margin-left: 720px;
+  position: absolute;
+  right: 20px;
+  gap: 10px;
+}
+.twi:hover{
+  background-color: black;
+}
+.ins:hover{
+  background-color: black;
+}
+.fac:hover{
+  background-color: black;
+}
+.lin:hover{
+  background-color: black;
+  background-size: 1px;
+}
+
+
+/* .parent img{
+    object-fit: cover;
+    height: 643px;
+    width: 235px;
+  }
+  .parent:hover img{
+    width: 1000px;
+  } */

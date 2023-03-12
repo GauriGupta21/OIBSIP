@@ -1,0 +1,43 @@
+Array.from(document.querySelectorAll('.cross')).forEach((e)=>{
+    e.addEventListener('click',(cross_btn)=>{
+        console.log(e);
+        Array.from(document.querySelectorAll('.info')).forEach((el)=>{
+            el.style.display="none";
+            el.classList.remove('animation_class');
+        })
+    })
+})
+Array.from(document.querySelectorAll('.info')).forEach((e)=>{
+    e.addEventListener('click',(cross_btn)=>{
+        console.log(e);
+        Array.from(document.querySelectorAll('.info')).forEach((el)=>{
+            el.style.display="none";
+            el.classList.remove('animation_class');
+        })
+    })
+})
+
+document.getElementById('tesla').addEventListener('click',()=>{
+    document.getElementById('tesla_details').style.display="flex";
+    document.getElementById('tesla_details').classList.add('animation_class');
+})
+document.getElementById('spacex').addEventListener('click',()=>{
+    document.getElementById('spacex_details').style.display="flex";
+    document.getElementById('spacex_details').classList.add('animation_class');
+})
+document.getElementById('neuralink').addEventListener('click',()=>{
+    document.getElementById('neuralink_details').style.display="flex";
+    document.getElementById('neuralink_details').classList.add('animation_class');
+})
+document.getElementById('twitter').addEventListener('click',()=>{
+    document.getElementById('twitter_details').style.display="flex";
+    document.getElementById('twitter_details').classList.add('animation_class');
+})
+document.getElementById('paypal').addEventListener('click',()=>{
+    document.getElementById('paypal_details').style.display="flex";
+    document.getElementById('paypal_details').classList.add('animation_class');
+})
+document.getElementById('xcom').addEventListener('click',()=>{
+    document.getElementById('xcom_details').style.display="flex";
+    document.getElementById('xcom_details').classList.add('animation_class');
+})

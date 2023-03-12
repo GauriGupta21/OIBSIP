@@ -1,0 +1,28 @@
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  font-family: "Ubuntu", sans-serif;
+}
+.name {
+  position: absolute;
+  font-family: "Merriweather", serif;
+  top: 17em;
+  left: 10em;
+}
+.parent {
+  position: absolute;
+}
+.img1 img {
+  height: 700px;
+  width: 900px;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+.img1 {
+  box-shadow: 1px 1px 20px;
+  position: relative;
+  top: 12px;
+  left: 587px;
+}

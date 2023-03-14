@@ -1,0 +1,52 @@
+body {
+    background: linear-gradient(25deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    font-family: "Ubuntu", sans-serif;
+  }
+  .name {
+    position: absolute;
+    top: 17em;
+    left: 17em;
+  }
+  img{
+    height: 250px;
+    width: 361px;
+    transition: all 0.5s;
+    /* object-fit: contain; */
+  }
+  .name p {
+    font-weight: 600;
+  }
+  
+  .name h1 {
+    text-decoration: underline;
+  }
+  .cal_parents {
+      display: flex;
+      flex-wrap: wrap;
+      position: absolute;
+      top: 90px;
+      height: 102px;
+      width: 730px;
+      left:701px;
+  }
+  .cal_parents div{
+    height: 250px;
+    width: 361px;
+    position: relative;
+    border: 1px solid;
+  }
+  .img{
+    position: absolute;
+    z-index: 3;
+  }
+  .cal_parents:hover .img {
+    width: 765px;
+    height: 525px;
+    /* object-fit: cover; */
+    position: absolute;
+    left:0px;
+    cursor: pointer;
+  }
+  
